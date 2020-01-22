@@ -1,9 +1,12 @@
-// import { Component } from "react";
 import React  from "react";
-// the html tags are converted to JSX as mentioned below
-// React.createElement('div',{className:'App'}, React.createElement('h1',null, 'Hi, I am React App'))
-const person = () => {
-    return <p>I am a person</p>
+
+const person = props => {
+return (
+    <div>
+        <p>I am a person Name: {props.name} & I am {props.age} years old</p>
+    </div>
+    );
+
 }
 
 export default person;
